@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Anilore</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-area">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><input type="text" placeholder="Cari Hewan Anda" class="search" id="search"></li>
+
+
+                </ul>
+
+            </nav>
+            <img src="Group.png" alt="logo Anilore" class="logoAnilore">
+
+        </div>
+        <div class="tittle-area">
+            <h1>Anilore</h1>
+            <p>Informasi Setiap Hewan Di Berbagai Dunia.</p>
+        </div>
+        <div class="card-area">
+            <div class="card-list" id="cardList"></div>
+        </div>
+    </div>
+
+    <script>
+        const api = "anilore.json";
+        const listCard = document.getElementById('cardList');
+
+        fetch(api)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.hewan && Array.isArray(data.hewan)) {
+                    data.hewan.forEach(el => {
+                        const card = document.createElement("div");
+                        card.classList.add("animal-card");
+
+                        const name = document.createElement('h1')
+                        name.textContent = el.name;
+                        name.classList.add("name")
+
+                        const type = document.createElement('p')
+                        type.textContent = el.type;
+                        type.classList.add("type")
+
+                        const habitat = document.createElement('h4')
+                        habitat.textContent = el.habitat;
+                        habitat.classList.add("habitat")
+
+                        const deskripsi = document.createElement('p')
+                        deskripsi.textContent = el.description;
+                        deskripsi.classList.add("deskripsi")
+
+                        const image = document.createElement('img');
+                        image.src = el.image;
+                        image.classList.add("image-card");
+
+                        listCard.appendChild(card);
+                        card.appendChild(image);
+
+                        // Membuat div untuk menyusun teks (name, type, deskripsi, habitat) secara sejajar
+                        const textContainer = document.createElement('div');
+                        textContainer.classList.add('text-container');
+                        card.appendChild(textContainer);
+
+                        listCard.appendChild(card);
+                        card.appendChild(image);
+                        card.appendChild(textContainer);
+                        textContainer.appendChild(name);
+                        textContainer.appendChild(type);
+                        textContainer.appendChild(habitat);
+                        textContainer.appendChild(deskripsi);
+                    });
+                } else {
+                    throw new Error('Data structure is not as expected');
+                }
+            })
+            .catch(error => console.error('Error fetching data:', error));
+
+        // Get references to the input and list
+        const searchInput = document.getElementById("search");
+        const itemList = document.getElementById("cardList");
+
+        // Listen for user input in the search bar
+        searchInput.addEventListener("input", filterItems);
+
+        function filterItems() {
+            const searchText = searchInput.value.toLowerCase();
+            const items = itemList.getElementsByClassName("animal-card");
+
+            for (let item of items) {
+                const animalName = item.querySelector('h1').textContent.toLowerCase();
+                if (animalName.includes(searchText)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

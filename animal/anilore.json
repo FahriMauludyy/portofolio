@@ -1,0 +1,100 @@
+{
+    "hewan": [
+      {
+        "id": 1,
+        "name": "Harimau Sumatra",
+        "type": "Mamalia | Karnivora",
+        "habitat": "Sumatra Utara",
+        "description": "Harimau sumatra merupakan harimau yang memiliki ukuran terkecil. Harimau sumatra mempunyai warna paling gelap di antara semua subspesies harimau lainnya, pola hitamnya berukuran lebar dan jaraknya rapat dan juga berhimpitan. ",
+        "image": "harimau.png"
+      },
+      {
+        "id": 2,
+        "name": "Komodo",
+        "type": "Reptil | Karnivora",
+        "habitat": "Pulau Komodo",
+        "description": "Komodo atau lengkapnya biawak komodo adalah spesies biawak besar yang terdapat di Pulau Komodo di Provinsi Nusa Tunggara Timur,Indonesia. sekaligus kadal terbesar di dunia, dengan rata-rata panjang 2-3 meter dan beratnya bisa mencapai 100 kg.",
+        "image": "komodo.png"
+      },
+      {
+        "id": 3,
+        "name": "Badak Sumatra",
+        "type": "Mamalia | Herbivora",
+        "habitat": "Sumatra Barat",
+        "description": "Badak Sumatra (Dicerorhinus sumatrensis) adalah spesies badak yang endemik di pulau Sumatra, Indonesia. Dikenal karena ukuran tubuhnya yang kecil dan kulit yang berlipat, badak ini merupakan ikon penting dari keanekaragaman hayati Sumatra. ",
+        "image": "badak.png"
+      },
+      {
+        "id": 4,
+        "name": "Panda",
+        "type": "Mamalia | Omnivora",
+        "habitat": "Tiongkok Tengah",
+        "description": "Panda raksasa masih bersaudara dengan panda merah, tetapi mereka dinamai mirip sepertinya karena kebiasaan mereka memakan bambu.",
+        "image": "panda.png"
+      },
+      {
+        "id": 5,
+        "name": "Kera Emas",
+        "type": "Mamalia | Omnivora",
+        "habitat": "Tiongkok Tengah",
+        "description": "Kera emas berhidung pesek (Rhinopithecus roxellana) adalah kera Dunia Lama dalam subfamili Colobinae.Kera ini bersifat endemis di daerah kecil beriklim sedang, hutan bergunung di Tiongkok tengah dan barat daya.",
+        "image": "kera.png"
+      },
+      {
+        "id": 6,
+        "name": "Panda Merah",
+        "type": "Mamalia | Omnivora",
+        "habitat": "Sichuan Selatan",
+        "description": "Panda Merah (Ailurus fulgens), sering disebut sebagai panda kecil, adalah mamalia asli pegunungan berhutan Asia Timur. Meskipun namanya menyerupai Panda Besar, panda merah sebenarnya lebih dekat kekerabatannya dengan musang dan rakun. ",
+        "image": "pandamerah.png"
+      },
+      {
+        "id": 7,
+        "name": "Singa Afrika",
+        "type": "Mamalia | Karnivora",
+        "habitat": "Afrika Selatan",
+        "description": "Setelah Harimau, Singa adalah kucing besar kedua di dunia dapat tumbuh seberat 500 pounds di sabana, padang rumput dan daerah/tanah berhutan di bagian timur dan selatan Afrika. Di alam liar, mereka dapat hidup hingga 14 tahun. ",
+        "image": "singa.png"
+      },
+      {
+        "id": 8,
+        "name": "Zebra",
+        "type": "Mamalia | Herbivora",
+        "habitat": "Afrika Timur",
+        "description": "Zebra adalah hewan pemakan rumput yang dapat bertahan hidup dengan mengonsumsi tumbuhan bermutu rendah. Mereka menjadi mangsa singa dan biasanya melarikan diri ketika merasa terancam, tetapi mereka juga bisa menggigit dan menendang. ",
+        "image": "zebra.png"
+      },
+      {
+        "id": 9,
+        "name": "Gajah Afrika",
+        "type": "Mamalia | Herbivora",
+        "habitat": "Afrika Sub-Sahara",
+        "description": "Gajah afrika adalah spesies hewan dari genus Loxodonta, 1 dari 2 genus yang masih hidup dalam Elephantidae. Meskipun umum dipercaya bahwa genus dinamai oleh Georges Cuvier pada tahun 1825, Cuvier mengejanya Loxodonte.",
+        "image": "gajah.png"
+      },
+      {
+        "id": 10,
+        "name": "Toco Toucan",
+        "type": "Burung | Omnivora",
+        "habitat": "Hutan Amazon",
+        "description": "Tukan toco (Ramphastos toco) adalah spesies yang paling terbesar dan mungkin paling dikenal dalam keluarga tukan. Hal ini ditemukan di habitat semi terbuka seluruh bagian besar dari pusat dan timur Amerika Selatan. ",
+        "image": "toco.png"
+      },
+      {
+        "id": 11,
+        "name": "Armadillo",
+        "type": "Mamalia | Insektivora",
+        "habitat": "Hutan Amazon ",
+        "description": "Armadillo adalah mamalia plasental kecil, diketahui karena memiliki perisai pada tubuhnya. Dasypodidae adalah satu-satunya famili yang selamat pada ordo Cingulata.",
+        "image": "armadillo.png"
+      },
+      {
+        "id": 12,
+        "name": "Piranha",
+        "type": "Ikan | Karnivora",
+        "habitat": "Sungai Amazon",
+        "description": "Piranha adalah ikan air tawar omnivora yang hidup di sungai-sungai di Brazil. Di sungai-sungai Venezuela, mereka disebut caribes.",
+        "image": "piranha.png"
+      }
+    ]
+  }

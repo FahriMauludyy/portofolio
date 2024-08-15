@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="function.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>MentalProve</title>
+</head> 
+<body class="overflow-x-hidden">
+   <div  id="scrollContainer" class="overflow-y-scroll overflow-x-hidden">
+
+     <section>
+        <div id="splashScreen" class="splash-pertama bg-[#212121] fixed left-0 top-0 w-screen h-screen flex justify-center items-center">
+            <div id="textContainer" class="w-full text-center nunito font-medium relative">
+                <span id="text1" class="fadeText text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl sm:text-6xl md:text-8xl opacity-0 transition-opacity duration-1000">Hello, Good People</span>
+                <span id="text2" class="fadeText text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl sm:text-6xl md:text-8xl opacity-0 transition-opacity duration-1000">Are you Okay?</span>
+                <span id="text3" class="fadeText text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl sm:text-6xl md:text-8xl opacity-0 transition-opacity duration-1000">Let us Help you</span>
+            </div>
+        </div>
+
+    <!-- home section -->
+        <div class="homepage h-screen w-screen relative bg-white flex justify-center items-center">
+            <div id="down" class="scrollButton hidden sm:block md:block justify-center">
+                <a href="#sectionAbout"><span></span>Scroll</a>
+            </div>
+            <div class="logo">
+                <h1 class="text-6xl sm:text-7xl md:text-9xl spartan font-semibold">MentalProve.</h1>      
+            </div>
+
+            <div class="blackWave">
+                <div class='air air1'></div>
+                <div class='air air2'></div>
+                <div class='air air3'></div>
+                <div class='air air4'></div>
+            </div>
+        </div>
+    </section>
+    <!-- end home section -->
+
+    <!-- section about -->
+    <section id="sectionAbout" class="bg-white">
+        <div class="explainpage h-screen w-screen flex flex-col justify-center items-center">
+            <div class="divText flex flex-row justify-center w-3/4">
+                <p class="text-lg sm:text-2xl md:text-4xl pt-20 nunito font-normal">What We Do?</p>
+            </div>
+            <div class="divText flex flex-row justify-center w-[45%]">
+                <p class="text-[30px] sm:text-[32px] md:text-[50px] pt-5 nunito font-semibold text-center">We will help you to improve your mental health so that it becomes better.</p>
+            </div>
+            <div class="divIMG flex bg-no-repeat bg-fixed flex-row justify-center w-3/4">
+                <img class="pt-10  w-full h-auto max-w-xs sm:max-w-sm md:max-w-md" src="src/santai.png" alt="santai">
+            </div>
+        </div>
+    </section>
+    <!-- end about section -->
+
+    <!-- card section -->
+    <section class="cardSection flex justify-center bg-white items-center">
+        <div class="cardContainer h-screen w-screen flex flex-col justify-center items-center">
+            <div class="card flex flex-col sm:flex-row mt-6 justify-center items-center gap-6 sm:gap-24">
+                <a href="Overthinking.html" class="card1 w-64 sm:w-80 h-80 flex justify-center flex-col transition duration-500 ease-in-out transform hover:scale-105">
+                    <img class="w-full h-full object-cover" src="src/overthingking.png" alt="">
+                    <h1 class="text-2xl sm:text-3xl pt-3 font-normal text-center">Overthinking</h1>
+                </a>
+                <a href="Loneliness.html" class="card2 w-64 sm:w-80 h-80 flex justify-center flex-col transition duration-500 ease-in-out transform hover:scale-105">
+                    <img class="w-full h-full object-cover" src="src/loneliness.png" alt="">
+                    <h1 class="text-2xl sm:text-3xl pt-3 font-normal text-center">Loneliness</h1>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cardSection1 flex justify-center bg-white items-center">
+        <div class="cardContainer h-screen w-screen flex flex-col-reverse justify-center items-center">
+            <div class="card flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-24">
+                <a href="Depression.html" class="card1 w-64 sm:w-80 h-80 flex justify-center flex-col transition duration-500 ease-in-out transform hover:scale-105">
+                    <img class="w-full h-full object-cover" src="src/Depression.png" alt="">
+                    <h1 class="text-2xl sm:text-3xl pt-3 font-normal text-center">Depression</h1>
+                </a>
+                <a href="Anxiety.html" class="card2 w-64 sm:w-80 h-80 flex justify-center flex-col transition duration-500 ease-in-out transform hover:scale-105">
+                    <img class="w-full h-full object-cover" src="src/anxiety.png" alt="">
+                    <h1 class="text-2xl sm:text-3xl pt-3 font-normal text-center">Anxiety</h1>
+                </a>
+            </div>
+        </div>
+    </section>
+
+ <!-- end card section -->
+
+    <section class="teamSection bg-white">
+        <div class="teamContainer h-screen w-screen flex flex-col justify-center items-center">
+            <div class="header">
+                <h1 class="nunito mb-5 sm:mb-20 text-4xl sm:text-7xl font-semibold">Our Team</h1>
+            </div>
+            <div class="bagianCard flex flex-col sm:flex-row gap-13 sm:gap-24">
+                <div class="card1 w-56 sm:w-96 mb-5 h-[100%] flex justify-center flex-col transition duration-500 ease-in-out transform hover:scale-105">
+                    <img class="w-full h-full object-cover" src="src/arkan.png" alt="">
+                    <h1 class="text-lg sm:text-3xl pt-1 sm:pt-3 font-normal text-center">Arkan Naufal</h1>
+                </div>
+                <div class="card2 w-56 sm:w-96 h-[100%] flex justify-center flex-col transition duration-500 ease-in-out transform hover:scale-105">
+                    <img class="w-full h-full object-cover" src="src/mauludy.png" alt="">
+                    <h1 class="text-lg sm:text-3xl pt-1 sm:pt-3  font-normal text-center">Fahri Mauludy</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ContactSection bg-white">
+        <div class="ContactContainer h-screen w-screen">
+            <div class="hero flex justify-center h-[93%] flex-col-reverse sm:flex-row  items-center">
+                <div class="contact_field nunito w-[35%] mr-20">
+                    <input type="text" class="form-control form-group w-[150%] sm:w-[80%]" placeholder="Name" />
+                    <input type="text" class="form-control form-group my-16 w-[150%] sm:w-[80%]" placeholder="Email" />
+                    <textarea class="form-control form-group w-[150%] sm:w-[80%]" placeholder="Message"></textarea>
+                    <button class="contact_form_submit nunito text-[18px] sm:text-[20px] w-[150%] sm:w-[80%] ">Share you Feedback</button>
+                </div>
+                <div class="header flex justify-center items-center flex-col w-96 ">
+                    <h1 class="nunito  text-center text-7x1 sm:text-9xl mb-3 font-semibold">Contact Us</h1>
+                    <p class="text-lg  sm:text-2xl  w-[120%]  text-center">Kalian bisa mengisi form feedback ini jika kalian ada saran atau kritik untuk website ini atau bisa juga untuk jika kalian ingin menghubungi kami.</p>
+                </div>
+            </div>
+
+            <div class="legalcompany h-20 ">
+                <div class="hero">
+                    <h3 class="nunito ml-5 sm:ml-16 text-base sm:text-xl flex justify-center">© 2024 MentalProve™. All Rights Reserved.</h3>
+                </div>
+            </div>
+            
+        </div>   
+        
+    </section>
+    
+   
+   </div>
+   
+</body>
+
+</html>
