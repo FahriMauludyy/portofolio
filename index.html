@@ -7,13 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Portofolio</title>
     <style>
         .sato {
             font-family: 'satoshi';
         }
-
+        .manrope {
+            font-family: 'manrope';
+        }
 
         .blink {
             animation: blink 0.3s ease-in-out;
@@ -51,21 +57,16 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-
-
         .mutar1 {
             transform: rotate(180deg);
             animation: rotate 5s linear infinite;
         }
 
         .mutar2 {
+            transform: rotate(-180deg);
+            animation: rotate2 5s linear infinite;
+        }
+        .mutar3 {
             transform: rotate(-180deg);
             animation: rotate2 5s linear infinite;
         }
@@ -162,88 +163,86 @@
 </head>
 
 <body class=" bg-[#10100E] sato overflow-x-hidden">
-    <section class=" homepage bg-[#10100E] w-screen h-screen flex items-center justify-center">
-        <section class="content w-[83%] h-full | flex flex-col md:flex-row ">
+    <section class=" homepage bg-[#10100E] w-full flex flex-col pt-14 items-center justify-center">
+        <section class="content w-[70%] mb-16  | flex items-center flex-col md:flex-row ">
             <section
-                class="heading text-[#FFFFE3]  w-full md:w-1/2 mt-14 md:mt-16  text-left | flex flex-col items-center md:items-start   ">
-                <div class="textArea pr-8">
-                    <h1 class="text-[33px] w-full md:text-[50px] xl:text-7xl font-bold leading-[1.10] "> <span
-                            class="font-normal md:text-[50px]">HI THERE, I’M</span>
+                class="heading text-[#FFFFE3] w-full md:w-1/2 text-left | flex flex-col justify-start items-start   ">
+                <div class="textArea mb-10 md:mb-0 space-y-3 min-[413px]:space-y-5">
+                    <h1 class="text-[33px] w-full md:text-[50px] xl:text-6xl font-bold leading-[1.10] "> 
+                        <span class="font-normal text-2xl min-[413px]:text-3xl min-[1073px]:text-4xl">HI THERE, I'M</span>
                         <br>
                         <span>
-                            FAHRI MAULUDY
-                        </span></h1>
-
-                    <h3 class="text-xl  md:text-2xl w-full xl:text-4xl my-4 md:my-5 xl:my-8">A Junior Software Developer
+                            <h1 class=" text-3xl min-[413px]:text-4xl min-[1073px]:text-5xl">FAHRI MAULUDY</h1>
+                        </span>
+                    </h1>
+                    <h3 class=" text-lg min-[413px]:text-xl  min-[1073px]:text-2xl w-full ">A Junior Software Developer
                     </h3>
+                    <div class="iconArea text-3xl space-x-5">
+                        <a href="https://www.instagram.com/fahrimauludy/">
+                            <i class="fa-brands fa-instagram text-[#FFFFE3] hover:text-[#94947F]">
 
-                    <div class="iconArea flex | grid-cols-4 gap-9 text-2xl md:text-3xl xl:text-4xl">
-                        <a href="https://www.instagram.com/fahrimauludy/"
-                            class="fa-brands fa-instagram text-[#FFFFE3] hover:text-[#c2c2ab]"></a>
-                        <a href="https://dribbble.com/FahriMauludy"
-                            class="fa-brands fa-dribbble text-[#FFFFE3] hover:text-[#c2c2ab] "></a>
-                        <a href="https://www.linkedin.com/in/fahri-mauludy-677723237/"
-                            class="fa-brands fa-linkedin text-[#FFFFE3] hover:text-[#c2c2ab] "></a>
+                            </i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fahri-mauludy-677723237/">
+                            <i class="fa-brands fa-linkedin text-[#FFFFE3] hover:text-[#94947F]"></i>
+                        </a>
+                        <a href="https://github.com/FahriMauludyy">
+                            <i class="fa-brands fa-github text-[#FFFFE3] hover:text-[#94947F]">
+                               
+                            </i>
+                        </a>
+                        <a href="https://read.cv/fahrimauludy">
+                            <i class="ph ph-read-cv-logo text-[#FFFFE3] hover:text-[#94947F]">
+                             
+                            </i>
+                        </a>
                        
-                        <a href="https://github.com/FahriMauludyy"
-                            class="fa-brands fa-github text-[#FFFFE3] hover:text-[#c2c2ab] "></a>
                     </div>
-                </div>
-                <div class="animation-area invisible md:visible w-0 md:w-full flex flex-row h-0 md:h-full items-center">
-                    <div class="pb-28  pl-7">
-                        <img class="shape1 h-56" src="asset/shape.png" alt="shape1">
-                    </div>
-                    <div class="pt-28 pl-16 ">
-                        <img class="shape2 h-36" src="asset/shape1.png" alt="shape2">
-                    </div>
-                    <div class=" left-[30%] top-[45%] absolute">
-                        <div id="eye1" class="eye1 flex justify-center items-center rotate-[20deg]">
-                            <svg width="144" height="83" viewBox="0 0 144 83" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M70.8739 81.2413C100.037 81.965 125.819 63.1881 138.705 51.8101C143.897 47.2257 144.09 39.3546 139.13 34.5183C126.819 22.5152 101.99 2.48233 72.8273 1.75868C43.6639 1.03502 17.8822 19.812 4.99604 31.19C-0.19589 35.7743 -0.389325 43.6454 4.57108 48.4817C16.8826 60.4849 41.7106 80.5177 70.8739 81.2413ZM71.1692 69.2265C85.8995 69.592 98.1455 57.4749 98.5218 42.1617C98.8982 26.8488 87.2623 14.1389 72.532 13.7734C57.8019 13.4079 45.5558 25.5252 45.1795 40.838C44.8032 56.1513 56.4391 68.861 71.1692 69.2265Z"
-                                    fill="#FFFFE3" />
-                                <ellipse cx="71.6877" cy="41.8804" rx="28.342" ry="28.4788" fill="#FFFFE3" />
-                            </svg>
 
-                            <div class="pupil1"></div>
-                        </div>
-                    </div>
                 </div>
+                 <div class="animation-area invisible md:visible  w-0 md:w-full flex flex-row h-0 md:h-[30rem] items-center">
+                    <div class="pb-28  pl-7">
+                        <img class="shape1 h-36 min-[1470px]:h-48" src="asset/shape.png" alt="shape1">
+                    </div>
+                    <div class="pb-20 pl-10 min-[1470px]:pl-16 ">
+                        <img class="mutar3 h-16 min-[1470px]:h-24 mb-28 min-[1470px]:mb-32" src="asset/mutar3.png" alt="shape2">
+                        <img class="shape2 h-24 min-[1470px]:h-32" src="asset/shape1.png" alt="shape2">
+                    </div>
+                  
+                    
+                    
+                </div> 
 
             </section>
             <section
-                class="cardArea w-full md:w-1/2 p-10 md:p-0 mt-5 md:mt-16 | flex flex-col  justify-center md:justify-start items-center md:items-end">
+                class="cardArea w-full md:w-1/2 | flex flex-col  justify-start  items-center md:items-end">
 
                 <div
-                    class="card1 w-[305px] md:w-[400px] xl:w-[550px] h-24 md:h-32 xl:h-44 mb-5 md:mb-10 text-[#10100E] bg-[#FFFFE3] rounded-lg | flex items-center ">
-                    <h1 class="font-semibold text-[20px] md:text-[25px] xl:text-[32px] ml-5 md:ml-7">
+                    class="card1 w-full md:w-[85%] h-24 md:h-32 mb-5 p-5 md:mb-10 text-[#10100E] bg-[#FFFFE3] rounded-lg | flex items-center ">
+                    <h1 class="font-semibold text-[17px] min-[413px]:text-[18px] min-[413px]:text-[20px] min-[1135px]:text-[24px] min-[1470px]:text-[28px] ">
                         WELCOME TO MY <br>
                         WEBISTE PORTOFOLIO👋🏻
                     </h1>
                 </div>
 
                 <div
-                    class="card2 w-[305px] md:w-[400px] xl:w-[550px] h-36 md:h-52 xl:h-56 mb-5 md:mb-10 bg-[#FFFFE3] rounded-lg | flex flex-col items-start justify-center">
-                    <h1 class="font-black text-[#10100E] text-[22px] md:text-[25px] xl:text-[31px] ml-4 md:ml-7">About
+                    class="card2 w-full md:w-[85%] h-30 min-[1470px]:h-40  mb-5 p-5 md:mb-10 bg-[#FFFFE3] rounded-lg | flex flex-col items-start justify-center">
+                    <h1 class="font-black text-[#10100E] text-[22px] min-[500px]:text-[24px] min-[1470px]:text-[28px] ">About
                         me</h1>
                     <p
-                        class="font-semibold text-[#10100E] text-[12px] md:text-[16px] xl:text-[22px] ml-4 md:ml-7 mt-1 md:mt-2">
+                        class="font-semibold text-[#10100E] text-[14px] min-[1470px]:text-[18px] mt-1 md:mt-2">
                         I’m a
-                        Junior Software Developer living in the 🇮🇩, <br> Now I am still a student at IDN Boarding
+                        Junior Software Developer living in the 🇮🇩, Now I am still a student at IDN Boarding
                         School
                     </p>
-                    <a href="https://read.cv/fahrimauludy" class="text-[#10100E] hover:text-[#FFFFE3] bg-opacity-0 hover:bg-[#10100E] w-16 md:w-24 ml-4 md:ml-7 mt-3 md:mt-5 h-8 *: md:h-10 rounded-md flex justify-center items-center border-[#10100E] border-2">
-                            <p class=" text-[13px] md:text-[20px]  font-semibold">read.cv</p>
-                    </a>
                 </div>
 
                 <div
-                    class="card3 w-[305px] md:w-[400px] xl:w-[550px] h-48 md:h-64 bg-[#FFFFE3] rounded-lg | flex flex-col items-start justify-center">
-                    <h1 class="font-black text-[#10100E] text-[23px] md:text-[31px] ml-5 md:ml-7 mb-4">My skills</h1>
+                    class="card3 w-full md:w-[85%] h-52 min-[1470px]:h-64 bg-[#FFFFE3] rounded-lg p-5 | flex flex-col items-start justify-center">
+                    <h1 class="font-black text-[#10100E] text-[22px] min-[500px]:text-[24px] min-[1470px]:text-[28px] mb-4">My skills</h1>
                     <div
-                        class="skills font-semibold text-[#10100E] text-[17px] md:text-[20px] xl:text-[25px] ml-5 md:ml-7 flex flex-row">
-                        <section class="mr-20 md:mr-28">
+                        class="skills font-semibold text-[#10100E] text-[15px] min-[940px]:text-[16px] min-[1470px]:text-[20px] flex flex-row">
+                        <section class=" mr-8 min-[390px]:mr-16 min-[485px]:mr-32 md:mr-8 min-[830px]:mr-10 min-[940px]:mr-16 min-[1150px]:mr-28">
                             <p class="">HTML</p>
                             <p class="my-3">CSS</p>
                             <p class="">JavaScript</p>
@@ -258,182 +257,182 @@
                 </div>
             </section>
         </section>
-
-    </section>
-    <section class="projectpage bg-[#10100E] h-[240vh] md:h-[200vh] w-screen flex items-center justify-center">
-        <div class="project-content w-[83%] h-full | flex items-center justify-center flex-col">
-            <section class="heading pl-4 md:pl-0 w-full h-[5%] md:h-32 ">
-                <h1 class=" text-[33px] text-[#FFFFE3]  md:text-[50px] xl:text-7xl md:w-auto font-bold ">ALL MY WORKS.
+         <div class="project-content w-[70%] h-full  | flex items-center justify-center flex-col">
+            <section class="heading w-full">
+                <h1 class="  text-[#FFFFE3] text-3xl min-[413px]:text-4xl min-[1073px]:text-5xl md:w-auto mb-8 min-[1073px]:mb-12 font-bold ">ALL MY WORKS
                 </h1>
             </section>
-            <section class="project-card w-full h-full items-center justify-center md:items-start flex-col md:flex-row">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-28 w-full justify-center">
-                    <section class="card1 w-full p-1 md:p-0 h-[70%] ">
+            <section class="project-card w-full h-full items-center mb-16 justify-center min-[900px]:items-start flex-col min-[900px]:flex-row">
+                <div class="grid grid-cols-1 min-[900px]:grid-cols-2 gap-8 min-[1000px]:gap-12 min-[1200px]:gap-16 min-[1500px]:gap-24 w-full justify-center">
+                    <section class="card1 w-full p-1 min-[900px]:p-0 h-[70%] ">
                         <div class="image-area ">
                             <a href="coolest/coolest.html" class="w-full h-[75%]">
-                                <img class="rounded-lg" src="asset/coolestWeb.png" alt="Coolest Wesbite">
+                                <img class="rounded-lg" src="asset/coolestWeb.png" loading="lazy" alt="Coolest Wesbite">
                             </a>
                         </div>
-                        <div class="tittle-area w-full h-[15%] md:h-[20%] pt-5 md:pt-2 | flex items-center">
-                            <div class="text-area w-1/2">
-                                <h1 class=" text-[12px] md:text-xl text-[#A19D99] pb-1 ">Personal Project</h1>
-                                <h1 class=" font-bold text-xl   md:text-4xl text-[#FFFFE3]">Coolest Website</h1>
+                        <div class="tittle-area w-full h-[15%] min-[900px]:h-[20%] mt-5 min-[615px]:mt-3 | flex items-end">
+                            <div class="text-area w-1/2 h-20 flex flex-col justify-end ">
+                                <h1 class=" text-xs min-[415px]:text-sm min-[470px]:text-base min-[700px]:text-lg min-[900px]:text-[10px] min-[1163px]:text-[13px] min-[1500px]:text-[15px] text-[#A19D99]">Personal Project</h1>
+                                <h1 class=" font-bold text-[15px] min-[415px]:text-lg min-[470px]:text-xl min-[560px]:text-2xl min-[700px]:text-3xl min-[900px]:text-[17px]  min-[940px]:text-xl min-[1163px]:text-2xl min-[1500px]:text-3xl text-[#FFFFE3]">Coolest Website</h1>
                             </div>
-                            <div class="type-area w-1/2 flex grid-cols-3 gap-1 md:gap-3 pt-8 ">
+                            <div class="type-area w-1/2 h-6 min-[530px]:h-7 min-[1250px]:h-8 space-x-1 min-[420px]:space-x-2 flex">
                                 <p
-                                    class="text-[#A19D99] text-[7px] md:text-[13px] border-[#A19D99]  p-1 w-1/3 md:w-24 border md:border-2 flex justify-center items-center rounded-[15px] md:rounded-full">
+                                    class="text-[#A19D99] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] border-[#A19D99]  p-1 w-28 border md:border-2 flex justify-center items-center rounded-[15px] md:rounded-full">
                                     DESIGN</p>
                                 <p
-                                    class="text-[#A19D99] text-[7px] md:text-[13px] border-[#A19D99]  p-1 w-20 md:w-36 border md:border-2 flex justify-center items-center  rounded-[15px] md:rounded-full">
+                                    class="text-[#A19D99] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] border-[#A19D99]  p-1 w-48 border md:border-2 flex justify-center items-center  rounded-[15px] md:rounded-full">
                                     DEVELOPMENT</p>
                                 <p
-                                    class="text-[#10100E] text-[8px] md:text-[13px] font-semibold bg-[#A19D99] p-[4px] w-1/3 md:w-20 flex justify-center items-center rounded-[15px] md:rounded-full">
+                                    class="text-[#10100E] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] font-semibold bg-[#A19D99] p-[4px] w-1/3 md:w-20 flex justify-center items-center rounded-[15px] md:rounded-full">
                                     2024</p>
                             </div>
                         </div>
 
                     </section>
-                    <section class="card2 w-full p-1 md:p-0 h-[70%] ">
+                    <section class="card2 w-full p-1 min-[900px]:p-0 h-[70%] ">
                         <div class="image-area ">
                             <a href="mental/index.html" class="w-full h-[75%]">
-                                <img class="rounded-lg" src="asset/MentalWeb.png" alt="Coolest Wesbite">
+                                <img class="rounded-lg" src="asset/MentalWeb.png" loading="lazy" alt="Coolest Wesbite">
                             </a>
                         </div>
-                        <div class="tittle-area w-full h-[15%] md:h-[20%] pt-5 md:pt-2 | flex items-center">
-                            <div class="text-area w-1/2">
-                                <h1 class=" text-[12px] md:text-xl text-[#A19D99] pb-1 ">Competition Project</h1>
-                                <h1 class=" font-bold text-xl   md:text-4xl text-[#FFFFE3]">Mental Prove</h1>
+                        <div class="tittle-area w-full h-[15%] min-[900px]:h-[20%] mt-5 min-[615px]:mt-3 | flex items-end">
+                            <div class="text-area w-1/2 h-20 flex flex-col justify-end ">
+                                <h1 class=" text-xs min-[415px]:text-sm min-[470px]:text-base min-[700px]:text-lg min-[900px]:text-[10px] min-[1163px]:text-[13px] min-[1500px]:text-[15px] text-[#A19D99]">Competition Project</h1>
+                                <h1 class=" font-bold text-[15px] min-[415px]:text-lg min-[470px]:text-xl min-[560px]:text-2xl min-[700px]:text-3xl min-[900px]:text-[17px]  min-[940px]:text-xl min-[1163px]:text-2xl min-[1500px]:text-3xl text-[#FFFFE3]">Mental Prove</h1>
                             </div>
-                            <div class="type-area w-1/2 flex grid-cols-3 gap-1 md:gap-3 pt-8 ">
+                            <div class="type-area w-1/2 h-6 min-[530px]:h-7 min-[1250px]:h-8 space-x-1 min-[420px]:space-x-2 flex">
                                 <p
-                                    class="text-[#A19D99] text-[7px] md:text-[13px] border-[#A19D99]  p-1 w-1/3 md:w-24 border md:border-2 flex justify-center items-center rounded-[15px] md:rounded-full">
+                                    class="text-[#A19D99] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] border-[#A19D99]  p-1 w-28 border md:border-2 flex justify-center items-center rounded-[15px] md:rounded-full">
                                     DESIGN</p>
                                 <p
-                                    class="text-[#A19D99] text-[7px] md:text-[13px] border-[#A19D99]  p-1 w-20 md:w-36 border md:border-2 flex justify-center items-center  rounded-[15px] md:rounded-full">
+                                    class="text-[#A19D99] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] border-[#A19D99]  p-1 w-48 border md:border-2 flex justify-center items-center  rounded-[15px] md:rounded-full">
                                     DEVELOPMENT</p>
                                 <p
-                                    class="text-[#10100E] text-[8px] md:text-[13px] font-semibold bg-[#A19D99] p-[4px] w-1/3 md:w-20 flex justify-center items-center rounded-[15px] md:rounded-full">
+                                    class="text-[#10100E] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] font-semibold bg-[#A19D99] p-[4px] w-1/3 md:w-20 flex justify-center items-center rounded-[15px] md:rounded-full">
+                                    2023</p>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="card3 w-full p-1 min-[900px]:p-0 h-[70%] ">
+                        <div class="image-area ">
+                            <a href="https://indozons.netlify.app/" class="w-full h-[75%]">
+                                <img class="rounded-lg" src="asset/indozons.png" loading="lazy" alt="Indozons Wesbite">
+                            </a>
+                        </div>
+                        <div class="tittle-area w-full h-[15%] min-[900px]:h-[20%] mt-5 min-[615px]:mt-3 | flex items-end">
+                            <div class="text-area w-1/2 h-20 flex flex-col justify-end ">
+                                <h1 class=" text-xs min-[415px]:text-sm min-[470px]:text-base min-[700px]:text-lg min-[900px]:text-[10px] min-[1163px]:text-[13px] min-[1500px]:text-[15px] text-[#A19D99]">Competition Project</h1>
+                                <h1 class=" font-bold text-[15px] min-[415px]:text-lg min-[470px]:text-xl min-[560px]:text-2xl min-[700px]:text-3xl min-[900px]:text-[17px]  min-[940px]:text-xl min-[1163px]:text-2xl min-[1500px]:text-3xl text-[#FFFFE3]">Indozons</h1>
+                            </div>
+                            <div class="type-area w-1/2 h-6 min-[530px]:h-7 min-[1250px]:h-8 space-x-1 min-[420px]:space-x-2 flex">
+                                <p
+                                    class="text-[#A19D99] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] border-[#A19D99]  p-1 w-28 border md:border-2 flex justify-center items-center rounded-[15px] md:rounded-full">
+                                    DESIGN</p>
+                                <p
+                                    class="text-[#A19D99] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] border-[#A19D99]  p-1 w-48 border md:border-2 flex justify-center items-center  rounded-[15px] md:rounded-full">
+                                    DEVELOPMENT</p>
+                                <p
+                                    class="text-[#10100E] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] font-semibold bg-[#A19D99] p-[4px] w-1/3 md:w-20 flex justify-center items-center rounded-[15px] md:rounded-full">
                                     2024</p>
                             </div>
                         </div>
 
                     </section>
-                    <section class="card3 w-full p-1 md:p-0 h-[70%] ">
-                        <div class="image-area ">
-                            <a href="lego/legoweb.html" class="w-full h-[75%]">
-                                <img class="rounded-lg" src="asset/legoWeb.png" alt="Coolest Wesbite">
-                            </a>
-                        </div>
-                        <div class="tittle-area w-full h-[15%] md:h-[20%] pt-5 md:pt-2 | flex items-center">
-                            <div class="text-area w-1/2">
-                                <h1 class=" text-[12px] md:text-xl text-[#A19D99] pb-1 ">School Project</h1>
-                                <h1 class=" font-bold text-xl   md:text-4xl text-[#FFFFE3]">Lego Website</h1>
-                            </div>
-                            <div class="type-area w-1/2 flex grid-cols-3 gap-1 md:gap-3 pt-8 ">
-                                <p
-                                    class="text-[#A19D99] text-[7px] md:text-[13px] border-[#A19D99]  p-1 w-1/3 md:w-24 border md:border-2 flex justify-center items-center rounded-[15px] md:rounded-full">
-                                    DESIGN</p>
-                                <p
-                                    class="text-[#A19D99] text-[7px] md:text-[13px] border-[#A19D99]  p-1 w-20 md:w-36 border md:border-2 flex justify-center items-center  rounded-[15px] md:rounded-full">
-                                    DEVELOPMENT</p>
-                                <p
-                                    class="text-[#10100E] text-[8px] md:text-[13px] font-semibold bg-[#A19D99] p-[4px] w-1/3 md:w-20 flex justify-center items-center rounded-[15px] md:rounded-full">
-                                    2023</p>
-                            </div>
-                        </div>
-
-                    </section>
-                    <section class="card4 w-full p-1 md:p-0 h-[70%] ">
+                    <section class="card4 w-full p-1 min-[900px]:p-0 h-[70%] ">
                         <div class="image-area ">
                             <a href="animal/index.html" class="w-full h-[75%]">
-                                <img class="rounded-lg" src="asset/AnimalWeb.png" alt="Coolest Wesbite">
+                                <img class="rounded-lg" src="asset/AnimalWeb.png" loading="lazy" alt="AnimalWeb Wesbite">
                             </a>
                         </div>
-                        <div class="tittle-area w-full h-[15%] md:h-[20%] pt-5 md:pt-2 | flex items-center">
-                            <div class="text-area w-1/2">
-                                <h1 class=" text-[12px] md:text-xl text-[#A19D99] pb-1 ">School Project</h1>
-                                <h1 class=" font-bold text-xl   md:text-4xl text-[#FFFFE3]">Anilore Website</h1>
+                        <div class="tittle-area w-full h-[15%] min-[900px]:h-[20%] mt-5 min-[615px]:mt-3 | flex items-end">
+                            <div class="text-area w-1/2 h-20 flex flex-col justify-end ">
+                                <h1 class=" text-xs min-[415px]:text-sm min-[470px]:text-base min-[700px]:text-lg min-[900px]:text-[10px] min-[1163px]:text-[13px] min-[1500px]:text-[15px] text-[#A19D99]">Personal Project</h1>
+                                <h1 class=" font-bold text-[15px] min-[415px]:text-lg min-[470px]:text-xl min-[560px]:text-2xl min-[700px]:text-3xl min-[900px]:text-[17px]  min-[940px]:text-xl min-[1163px]:text-2xl min-[1500px]:text-3xl text-[#FFFFE3]">Anilore</h1>
                             </div>
-                            <div class="type-area w-1/2 flex grid-cols-3 gap-1 md:gap-3 pt-8 ">
+                            <div class="type-area w-1/2 h-6 min-[530px]:h-7 min-[1250px]:h-8 space-x-1 min-[420px]:space-x-2 flex">
                                 <p
-                                    class="text-[#A19D99] text-[7px] md:text-[13px] border-[#A19D99]  p-1 w-1/3 md:w-24 border md:border-2 flex justify-center items-center rounded-[15px] md:rounded-full">
+                                    class="text-[#A19D99] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] border-[#A19D99]  p-1 w-28 border md:border-2 flex justify-center items-center rounded-[15px] md:rounded-full">
                                     DESIGN</p>
                                 <p
-                                    class="text-[#A19D99] text-[7px] md:text-[13px] border-[#A19D99]  p-1 w-20 md:w-36 border md:border-2 flex justify-center items-center  rounded-[15px] md:rounded-full">
+                                    class="text-[#A19D99] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] border-[#A19D99]  p-1 w-48 border md:border-2 flex justify-center items-center  rounded-[15px] md:rounded-full">
                                     DEVELOPMENT</p>
                                 <p
-                                    class="text-[#10100E] text-[8px] md:text-[13px] font-semibold bg-[#A19D99] p-[4px] w-1/3 md:w-20 flex justify-center items-center rounded-[15px] md:rounded-full">
+                                    class="text-[#10100E] text-[7px] min-[428px]:text-[8px] min-[560px]:text-[10px] min-[900px]:text-[8px] min-[1163px]:text-[10px] min-[1500px]:text-[13px] font-semibold bg-[#A19D99] p-[4px] w-1/3 md:w-20 flex justify-center items-center rounded-[15px] md:rounded-full">
                                     2023</p>
                             </div>
                         </div>
 
                     </section>
+                   
                 </div>
             </section>
         </div>
-    </section>
-
-
-    <section class="footer bg-[#FFFFE3] bg-fixed h-[33vh]  md:h-[35vh] w-screen flex items-center justify-center ">
-        <div class=" invisible md:visible  w-0 md:w-[40%] h-0 md:h-full flex justify-center items-center">
-            <img class="mutar1 w-32" src="asset/mutar1.png" alt="">
-        </div>
-        <div class="first-layer w-[83%] h-full | flex flex-col justify-center items-center">
-            <div class="two-eye w-full  | flex justify-center items-start">
-                <div class="flex space-x-0 md:space-x-8">
-                    <div id="eye1" class="eye flex justify-center items-center">
-                        <svg class="responsive-svg w-[60%] md:w-[80%] h-auto" width="116" height="75"
-                            viewBox="0 0 116 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M57.212 73.4292C80.7534 74.0756 101.565 57.3048 111.967 47.1424C116.158 43.0478 116.314 36.0177 112.31 31.6981C102.372 20.9773 82.3302 3.0848 58.7888 2.43846C35.2473 1.79211 14.4356 18.563 4.03347 28.7254C-0.157598 32.8198 -0.313745 39.85 3.69044 44.1696C13.6287 54.8904 33.6705 72.7829 57.212 73.4292ZM57.4503 62.6981C69.3411 63.0245 79.2264 52.202 79.5302 38.5248C79.834 24.848 70.4412 13.496 58.5505 13.1696C46.6599 12.8431 36.7745 23.6658 36.4707 37.3426C36.1669 51.0198 45.5598 62.3716 57.4503 62.6981Z"
-                                fill="black" />
-                            <ellipse cx="57.8687" cy="38.2735" rx="22.8784" ry="25.4361" fill="black" />
-                        </svg>
-
-                        <div class="pupil"></div>
-                    </div>
-                    <div id="eye2" class="eye flex justify-center">
-                        <svg class="responsive-svg w-[60%] md:w-[80%] h-auto" width="116" height="75"
-                            viewBox="0 0 116 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M57.212 73.4292C80.7534 74.0756 101.565 57.3048 111.967 47.1424C116.158 43.0478 116.314 36.0177 112.31 31.6981C102.372 20.9773 82.3302 3.0848 58.7888 2.43846C35.2473 1.79211 14.4356 18.563 4.03347 28.7254C-0.157598 32.8198 -0.313745 39.85 3.69044 44.1696C13.6287 54.8904 33.6705 72.7829 57.212 73.4292ZM57.4503 62.6981C69.3411 63.0245 79.2264 52.202 79.5302 38.5248C79.834 24.848 70.4412 13.496 58.5505 13.1696C46.6599 12.8431 36.7745 23.6658 36.4707 37.3426C36.1669 51.0198 45.5598 62.3716 57.4503 62.6981Z"
-                                fill="black" />
-                            <ellipse cx="57.8687" cy="38.2735" rx="22.8784" ry="25.4361" fill="black" />
-                        </svg>
-                        <div class="pupil"></div>
+         <section class="footer bg-[#FFFFE3] w-full mt-20 flex items-center justify-center ">
+            <div class=" invisible md:visible  w-0 md:w-[40%] h-0 md:h-full flex justify-center items-center">
+                <img class="mutar1 w-20 min-[1200px]:w-24" src="asset/mutar1.png" alt="">
+            </div>
+            <div class="first-layer w-[70%] h-full | flex flex-col justify-center my-10 min-[530px]:my-14 items-center">
+                <div class="two-eye w-full  | flex justify-center items-start">
+                    <div class="flex space-x-0 md:space-x-8">
+                        <div id="eye1" class="eye flex justify-center items-center">
+                            <svg class="responsive-svg w-[60%] min-[1200px]:w-[70%]  h-auto" width="116" height="75"
+                                viewBox="0 0 116 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M57.212 73.4292C80.7534 74.0756 101.565 57.3048 111.967 47.1424C116.158 43.0478 116.314 36.0177 112.31 31.6981C102.372 20.9773 82.3302 3.0848 58.7888 2.43846C35.2473 1.79211 14.4356 18.563 4.03347 28.7254C-0.157598 32.8198 -0.313745 39.85 3.69044 44.1696C13.6287 54.8904 33.6705 72.7829 57.212 73.4292ZM57.4503 62.6981C69.3411 63.0245 79.2264 52.202 79.5302 38.5248C79.834 24.848 70.4412 13.496 58.5505 13.1696C46.6599 12.8431 36.7745 23.6658 36.4707 37.3426C36.1669 51.0198 45.5598 62.3716 57.4503 62.6981Z"
+                                    fill="black" />
+                                <ellipse cx="57.8687" cy="38.2735" rx="22.8784" ry="25.4361" fill="black" />
+                            </svg>
+    
+                            <div class="pupil"></div>
+                        </div>
+                        <div id="eye2" class="eye flex justify-center">
+                            <svg class="responsive-svg w-[60%] min-[1200px]:w-[70%]  h-auto" width="116" height="75"
+                                viewBox="0 0 116 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M57.212 73.4292C80.7534 74.0756 101.565 57.3048 111.967 47.1424C116.158 43.0478 116.314 36.0177 112.31 31.6981C102.372 20.9773 82.3302 3.0848 58.7888 2.43846C35.2473 1.79211 14.4356 18.563 4.03347 28.7254C-0.157598 32.8198 -0.313745 39.85 3.69044 44.1696C13.6287 54.8904 33.6705 72.7829 57.212 73.4292ZM57.4503 62.6981C69.3411 63.0245 79.2264 52.202 79.5302 38.5248C79.834 24.848 70.4412 13.496 58.5505 13.1696C46.6599 12.8431 36.7745 23.6658 36.4707 37.3426C36.1669 51.0198 45.5598 62.3716 57.4503 62.6981Z"
+                                    fill="black" />
+                                <ellipse cx="57.8687" cy="38.2735" rx="22.8784" ry="25.4361" fill="black" />
+                            </svg>
+                            <div class="pupil"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="social-link pt-7 pb-12 flex justify-center items-center">
-                <div class="text-center text-[20px] md:text-2xl gap-2 font-bold grid grid-cols-3 md:grid-cols-6">
-                    <a href="https://github.com/FahriMauludyy" class="">
-                        GITHUB
-                    </a>
-                    <a href="mailto:idnmuhammadfahri2008@gmail.com">
-                        EMAIL
-                    </a>
-                    <a href="https://www.linkedin.com/in/fahri-mauludy-677723237/">
-                        LINKEDIN
-                    </a>
-                    <a href="https://bento.me/fahrimauludy">
-                        BENTO
-                    </a>
-                    <a href="https://www.instagram.com/fahrimauludy/">
-                        INSTAGRAM
-                    </a>
-                    <a href="https://dribbble.com/FahriMauludy">
-                        DRIBBLE
-                    </a>
+                <div class="social-link pt-7 pb-12 flex justify-center items-center">
+                    <div class="text-center text-lg min-[490px]:text-xl min-[1200px]:text-2xl space-x-5 font-bold ">
+                        <a href="https://github.com/FahriMauludyy" class="">
+                            GITHUB
+                        </a>
+                        <a href="mailto:idnmuhammadfahri2008@gmail.com">
+                            EMAIL
+                        </a>
+                        <a href="https://www.linkedin.com/in/fahri-mauludy-677723237/">
+                            LINKEDIN
+                        </a>
+                        <a href="https://bento.me/fahrimauludy">
+                            BENTO
+                        </a>
+                        <a href="https://www.instagram.com/fahrimauludy/">
+                            INSTAGRAM
+                        </a>
+                        <a href="https://dribbble.com/FahriMauludy">
+                            DRIBBLE
+                        </a>
+                    </div>
+    
                 </div>
-
+                <h1 class=" text-xs min-[390px]:text-sm">© 2024 Fahri Mauludy. All Rights Reserved.</h1>
+    
             </div>
-            <h1 class="text-sm">© 2024 Fahri Mauludy. All Rights Reserved.</h1>
-
-        </div>
-        <div class=" invisible md:visible  w-0 md:w-[40%] h-0 md:h-full flex justify-center items-center">
-            <img class="mutar2 w-32" src="asset/mutar1.png" alt="">
-        </div>
+            <div class=" invisible md:visible  w-0 md:w-[40%] h-0 md:h-full flex justify-center items-center">
+                <img class="mutar2 w-20 min-[1200px]:w-24" src="asset/mutar1.png" alt="">
+            </div>
+        </section>  
     </section>
+  
+
+
+  
 
     <script>
         function blink() {
